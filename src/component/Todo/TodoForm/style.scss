@@ -1,12 +1,10 @@
 .todo__form {
   @apply relative flex my-4 w-full justify-center
-  & >input {
-    @apply w-full px-[8px] py-2 font-[16px] rounded-[4px] pr-12
-  }
 }
 
-// .todo__form input {
-// }
+.todo__form input {
+  @apply w-full px-[8px] py-2 font-[16px] rounded-[4px] pr-12
+}
 
 .todo__btn--add {
   @apply absolute top-[50%] right-[-8px] translate-x-[-50%] translate-y-[-50%] text-xl text-[#fff] cursor-pointer bg-[#2980B9] p-4 rounded-[4px] 

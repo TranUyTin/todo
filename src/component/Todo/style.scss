@@ -1,0 +1,7 @@
+.todo {
+  @apply max-w-lg m-auto px-10 mt-10 border bg-[#bdecfc] rounded-[4px]
+}
+
+.todo__header {
+  @apply text-2xl text-[#2980B9] text-center mt-3 font-semibold
+}

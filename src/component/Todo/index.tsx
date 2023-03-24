@@ -8,7 +8,7 @@ function Todo() {
   const initialData = data;
   const [todos, setTodos] = useState(initialData);
   const handleAddTodoForm = (value: string) => {
-    if (value === "") return;
+    if (!value) return;
     const newTodos = [
       ...todos,
       {

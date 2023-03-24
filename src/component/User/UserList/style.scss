@@ -1,0 +1,43 @@
+.table {
+  @apply flex justify-center max-w-[100%];
+  
+  &__user {
+    @apply w-full text-center border border-current overflow-hidden rounded-md; 
+
+    thead {
+      @apply font-semibold bg-[#2F8DFF] text-[#fff];
+  
+      th {
+        @apply p-4;
+      }
+  
+    }
+
+    tbody {
+  
+      td {
+        @apply py-3 font-medium;
+      }
+  
+      tr:nth-child(even) {
+        @apply bg-[#ccc];
+      }
+  
+      tr:nth-child(odd) {
+        @apply bg-[#fff];
+      }
+    }
+
+    .table__actions {
+      @apply flex justify-center items-center ;
+       
+      & .todo__btn {
+        @apply flex cursor-pointer text-[20px] mr-3;
+      }
+      
+      & span:hover {
+        @apply text-[#ccc];
+      }
+    }
+  }
+}

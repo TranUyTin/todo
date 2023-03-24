@@ -1,27 +1,23 @@
 .todo__item {
-	@apply flex justify-between p-2 w-full my-3 bg-[#fff] rounded-[4px] break-words
-}
-  
-.todo__task {
-	@apply text-left break-words cursor-pointer font-medium max-w-[75%]
-}
+	@apply flex justify-between p-2 w-full my-3 bg-[#fff] rounded-[4px] ;
 
-.todo__actions {
-	@apply flex 
-}
+	.todo__task {
+		@apply flex items-center text-left break-all cursor-pointer font-medium max-w-[90%];
 
-.todo__btn--del  {
-  @apply text-xl text-[#fff] cursor-pointer bg-[#2980B9] p-4 rounded-[4px] 
-}
-
-.todo__btn--update  {
-  @apply mr-4 text-xl text-[#fff] cursor-pointer bg-[#2980B9] p-4 rounded-[4px] 
-}
-
-.todo__btn--del:hover {
-  @apply bg-[#4783ac]
-}
-
-.completed {
-	text-decoration: line-through;
+		&--completed {
+			text-decoration: line-through;
+		}
+	}
+	
+	.todo__actions {
+		@apply flex items-center;
+	
+		.todo__btn--del  {
+			@apply text-xl text-[#fff] cursor-pointer bg-[#2980B9] p-4 rounded-[4px];
+			
+			&:hover {
+				@apply bg-[#4783ac];
+			}
+		}
+	}
 }

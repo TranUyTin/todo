@@ -1,0 +1,32 @@
+.k-dialog-wrapper .k-dialog {
+  @apply rounded-sm overflow-hidden;
+}
+.k-window-titlebar {
+  @apply bg-[#2F8DFF] text-[#fff] ;
+}
+
+.k-window-title{
+  @apply justify-center text-lg font-semibold;
+}
+
+.form {
+  @apply w-full px-5 py-3;
+  
+  &__field {
+    @apply w-full;
+    & input {
+      @apply p-2
+    }
+  }  
+}
+.k-form-buttons{
+  @apply flex justify-center items-center;
+}
+
+.form__btn--add {
+  @apply py-3 px-12 bg-[#2F8DFF] text-[#fff] font-semibold text-[16px];
+}
+
+.form__btn--add:hover {
+  @apply bg-[#4488db];
+}

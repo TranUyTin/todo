@@ -1,0 +1,19 @@
+.user {
+  @apply px-5 pt-5;
+  
+  &__header {
+    @apply flex justify-between p-[10px] my-5;
+
+    .user__heading {
+      @apply text-xl font-bold;
+    }
+  }
+
+  &__btn--add {
+    @apply py-2 px-4 bg-[#2F8DFF] text-[#fff] font-semibold text-[16px];
+  }
+
+  &__btn--add:hover {
+    @apply bg-[#4488db];
+  }
+}

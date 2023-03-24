@@ -9,7 +9,9 @@ function TodoList(props: any) {
         {todos.map((todo: Todo, index: number) => (
           <li key={index} className="todo__item">
             <span
-              className={`todo__task ${todo.complete ? "completed" : ""}  `}
+              className={`todo__task ${
+                todo.complete ? "todo__task--completed" : ""
+              }  `}
               onClick={() => handleComplete(index)}
             >
               {todo.task}

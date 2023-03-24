@@ -1,12 +1,14 @@
 import "./App.css";
-import Todo from "./component/Todo";
-import Header from "./pages/header";
+import User from "./component/User";
+import { UpdateUser } from "./component/User/UpdateUser";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Todo />
+      {/* <Header /> */}
+      {/* <Todo /> */}
+      <User />
+      <UpdateUser />
     </div>
   );
 }
